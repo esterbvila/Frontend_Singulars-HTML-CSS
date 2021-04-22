@@ -6,7 +6,7 @@ Check out my final project with danifdezalonso using React: https://github.com/d
 
 Open "Apunts d'HTML5.html" in order to see the list (with links) to all files.
 
-Highlights:
+## Highlights:
   <p><a href="Bootrstrap/Port de Premià/Index.html">Port de Premià website with Bootstrap </p>
   <p><a href="Maquetacions/Universe/Index.html">Stellar website, using the parallax efect</p>
   <p><a href="Maquetacions/Planting/Índex.html">Planting website</p>
