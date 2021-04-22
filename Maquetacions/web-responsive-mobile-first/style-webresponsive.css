@@ -1,0 +1,321 @@
+/******************** MOBILE FIRST ********+***************/
+
+body{
+    background-color: #FEFFB9;
+    margin:0;
+    padding:0;
+    }
+
+/* HEADER */
+header {
+    background-color:#FFD392 ;
+    padding:5px 0;
+    margin:0 auto;
+}
+.header {
+    width:fit-content;
+    margin:auto;
+    padding:10px 0;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+}
+header .header img{
+    width:35px;
+    margin:auto 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+h1{
+    max-width:204px;
+    height:min-content;
+    margin:auto 0;
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
+    color:rgba(254, 255, 185, 0.829);
+    font-size: 2em;
+    line-height: 0.65;
+    align-content: center;
+}
+
+/* NAV */
+nav {
+    background-color: #feffb9e1 ;
+    max-width:600px;
+    padding:0;
+    margin:0;
+    position:sticky;
+    top:0px;
+}
+ul{
+    max-width:600px;
+    padding:0px;
+    list-style: none;
+    margin:auto;
+}
+nav ul li{
+    margin:auto;
+    display:block;
+    max-width:600px;
+    text-align: center;
+    padding:8px 0;
+}
+
+nav ul li:not(:last-child){
+    border-bottom:solid 2px #FFD392;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+nav ul li a{
+    display:inline-block;
+    padding:5px 20px;
+    text-decoration: none;
+    justify-content: center;
+    color:#F98E21;
+    font-family: 'Nunito', sans-serif;
+    vertical-align: middle;
+    margin: auto;
+    font-size:0.9em;
+}
+
+/* CONTENT */
+.content{
+    background-color: #FFE640;
+    max-width:600px;
+    padding:5px 0 10px 0;
+    margin:0;
+}
+.content2{
+    max-width:560px;
+    margin:auto;
+    padding:0 20px;
+}
+h2{
+    max-width:580px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
+    color:#F98E21;
+    margin:10px auto 10px auto;
+}
+#subtitle{
+    max-width:560px;
+    text-align: center;
+    margin:auto;
+    margin-bottom:10px;
+    color:#4b2a09;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85em;
+    line-height: 1.2;
+}
+.content .content2 .flex{
+    max-width:600px;
+}
+.content .content2 .flex .block {
+    max-width:510px;
+    background-color:#FFC90B;
+    margin:5px auto;
+    padding:15px 0;
+}
+.content .content2 .flex .block p {
+    background-color:#FFC90B;
+    max-width:450px;
+    margin:auto 3%;
+    text-align: justify;
+    font-size:0.8em;
+    color:#4b2a09;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+.content .content2 .flex .block img{
+    width:94%;
+    margin:auto 3%;
+}
+
+/* FOOTER */
+footer{
+    background-color: #FFDBB9;
+    width:100%;
+    padding:1px 0;
+    margin:0;
+}
+div.footer{
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+h4{
+    color:#4b2a09;
+    margin:5px auto 5px auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.8em;
+
+}
+footer .footer p{
+    color:#4b2a09;
+    font-size: 0.5em;
+    font-family: 'Nunito', sans-serif;
+}
+
+/**************** DESKTOP *****************/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+body{
+    background-color: #FEFFB9;
+    margin:0;
+    padding:0;
+}
+
+/* HEADER */
+header {
+    background-color:#FFD392;
+    padding:10px 0;
+    margin:0 auto;
+}
+.header {
+    width:fit-content;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+}
+header .header img{
+    min-width:50px;
+    width:50px;
+    height:50px;
+    margin:auto 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+h1{
+    max-width:400px;
+    margin:auto 0;
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
+    color:rgba(254, 255, 185, 0.829);
+    font-size: 3.2em;
+}
+
+/* NAV */
+nav {
+    background-color: #feffb9e1 ;
+    max-width:none;
+    padding:0;
+    margin:0;
+    position:sticky;
+    top:0px;
+}
+ul{
+    padding:0px;
+    margin:auto;
+}
+nav ul li{
+    margin:0;
+    display:inline-block;
+    width:190px;
+    text-align: center;
+}
+
+nav ul li:not(:last-child){
+    border-bottom:none;
+    border-right:solid 3px #FFD392;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+nav ul li a{
+    padding:15px 40px;
+    text-decoration: none;
+    justify-content: center;
+    display:block;
+    color:#F98E21;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* CONTENT */
+.content{
+    background-color: #FFE640;
+    max-width:100%;
+    padding:15px 0 25px 0;
+    margin:0;
+}
+.content2{
+    max-width:98%;
+    margin:auto;
+}
+h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+    color:#F98E21;
+    margin:25px auto 20px auto;
+    max-width:95%;
+}
+#subtitle{
+    max-width:95%;
+    text-align: center;
+    margin:auto;
+    margin-bottom:30px;
+    color:#4b2a09;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.content .content2 .flex{
+    max-width:95%;
+    display:flex;
+    margin:auto;
+}
+.content .content2 .flex .block {
+    width:25%;
+    background-color:#FFC90B;
+    margin:0 5px;
+    padding:15px 0;
+}
+.content .content2 .flex .block p {
+    background-color:#FFC90B;
+    max-width:92%;
+    margin:4%;
+    text-align: justify;
+    font-size:0.8em;
+    color:#4b2a09;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+.content .content2 .flex .block img{
+    max-width:92%;
+    margin:auto 4%;
+}
+
+/* FOOTER */
+footer{
+background-color: #FFDBB9;
+width:100%;
+padding:1px 0;
+margin:0;
+}
+div.footer{
+margin:auto;
+text-align: center;
+align-content: center;
+}
+h4{
+color:#4b2a09;
+margin:15px auto 5px auto;
+font-family: 'Dancing Script', cursive;
+}
+footer .footer p{
+color:#4b2a09;
+font-size: 0.6em;
+font-family: 'Nunito', sans-serif;
+}
+}
+
+
+

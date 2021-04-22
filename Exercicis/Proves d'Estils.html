@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estils quadrats</title>
+<style>
+/* Quadres de text */
+body{
+    max-width:1700px;
+    background:rgb(229, 216, 190) url(./img/watercolor/watercolor.png);
+    /* li puc posar dues imatges al background 
+    url(./img/geometric-leaves/geometric-leaves.png)background-image: 
+    url(./img/watercolor/watercolor.png);
+    background-repeat:round, no repeat...;
+    background-position: center;
+    background-size: cover
+    bakground-attachement:inital,fixed*/
+}
+div{
+    background-color:rgb(216, 233, 232);
+    width: 210px;
+    height: 130px;
+    padding: 3em 1em 3em 1em; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left:1em;
+    margin-right:1em;
+    display:inline-block; /* perquè quedin en una linia. Ens tracta les coses com a caràcters. */ */
+    float:left;
+    vertical-align:top;
+}
+.justify{
+    text-align:justify;
+}
+.left{
+    text-align:left;
+}
+.center{
+    text-align:center;
+}
+.right{
+    text-align:right;
+}
+.smallcaps{
+    font-variant: small-caps;
+}
+.grad{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+span.backgroundcolor {
+    background-color:rgb(215, 203, 223);
+}
+/* Tipografies */
+span.obliqua {
+    font-style: oblique;
+    color:teal;
+}
+span.bold {
+    font-weight:bold;
+    color:rgb(120, 109, 184)
+}
+span.backgroundcolour {
+    background-color: rgb(138, 190, 190);
+}
+span.subratllatdb {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color:steelblue;
+}
+span.text-shadow{
+    text-shadow:2px 4px;
+    color:slateblue;
+}
+.borderupdown{
+    border-bottom: 2px solid blueviolet;
+    border-top:2px solid blueviolet;
+}
+/* Marcs */
+.marcsolid{
+    border-style:solid;
+    border-width: 2px;
+    border-color:rgb(158, 193, 209);
+    width: 206px;
+    height:126px;
+}
+.shadow{  
+    box-shadow: 10px 10px 5px lightblue;
+}
+.radius {
+    border-radius: 0px 15px;
+}
+.borderimage0 {
+    border: 20px solid transparent;
+    padding:15px;
+    border-image: url(./img/qcBAyqqXi.jpg) round;
+    border-image-slice: 100;
+    width: 170px;
+    height: 90px;
+    padding: 1em 1em 5em 1em;  
+}
+.borderimage1 {
+    border: 20px solid transparent;
+    padding:15px;
+    border-image: url(./img/borderlila.png) 40 round;
+    width: 170px;
+    height: 90px;
+    padding: 1em 1em 5em 1em;  
+}
+.borderimage2 {
+    border: 20px solid transparent;
+    padding:15px;
+    border-image: url(./img/borderblaurosalila-image.png) 40 stretch;
+    width: 170px;
+    height: 90px;
+    padding: 1em 1em 5em 1em;  
+}
+.borderimage3 {
+    border: 20px solid transparent;
+    padding:15px;
+    border-image: url(./img/borderlila.png) repeat;
+    border-image-slice: 40 10;
+    width: 170px;
+    height: 90px;
+    padding: 1em 1em 5em 1em;  
+}
+.borderimage4 {
+    border: 20px solid transparent;
+    padding:15px;
+    border-image: url(./img/borderblaurosalila-image.png) ;
+    border-image-slice: 50%;
+    border-image-repeat:space;
+    width: 170px;
+    height: 90px;
+    padding: 1em 1em 5em 1em;  
+}
+.borderimage5 {
+    border: 20px solid transparent;
+    padding:15px;
+    border-image: url(./img/watercolor/watercolor.png) stretch;
+    border-image-slice: 30% fill;
+    width: 170px;
+    height: 90px;
+    padding: 1em 1em 5em 1em; 
+    border-radius:50% 
+}
+
+/* border: 3px solid salmon 
+text-decoration: overline underline o border-top, border-bottom
+border-image-slice: 20px;
+round, stretch o repeat
+border-image-outset: 10px 5px 15px 10px; és per colocar fora del recuadre el marc
+
+*/
+
+</style>
+</head>
+<body>
+<div class="justify marcsolid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="obliqua"> Suscipit in possimus odio </span>maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="left marcsolid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? <span class="bold">Pariatur.</span> </div>
+<div class="center marcsolid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse  <span class="backgroundcolour"> fugit impedit dolores? </span>Pariatur, ad et. </div>
+<div class="right marcsolid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="smallcaps marcsolid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet <span class="subratllatdb">quam esse ipsa distinctio eaque </span>facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="jsutify shadow ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="left shadow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="center shadow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="right shadow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet <span class="bold">quam esse ipsa distinctio </span>eaque facilis fugit impedit dolores? </div>
+<div class="smallcaps shadow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="justify radius">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="left radius">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="center radius">Lorem, <span class="obliqua">ipsum dolor sit amet</span> consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="right radius">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="smallcaps radius borderimage0">Lorem, ipsum dolor sit amet consectetur <span class="borderupdown">adipisicing</span> elit.Suscipit in possimus odio <span class="borderupdown">maiores </span>tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="justify grad borderimage1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="left borderimage2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, <span class="text-shadow">et amet quam esse ipsa distinctio </span>eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="center borderimage3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et.</div>
+<div class="right borderimage4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et. </div>
+<div class="smallcaps borderimage5">Lorem, <span class="backgroundcolor">ipsum dolor sit amet consectetur </span>adipisicing elit. Suscipit in possimus odio maiores tempora voluptate sapiente, et amet quam esse ipsa distinctio eaque facilis fugit impedit dolores? Pariatur, ad et.</div>
+
+
+<!-- alinear a un costat o a un altre
+divs amb diverses classes
+-->
+
+</body>
+</html>

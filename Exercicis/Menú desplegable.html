@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+</head>
+<style>
+    body {
+        width: 1024px;
+        height:max-content;
+    }
+    h2{
+        margin:auto;
+        margin-left:4%;
+        color:#C393B2;
+    }
+    nav {}
+
+    .menu{
+        vertical-align:top;
+    }
+    .menu li{
+        display:inline-block;
+        vertical-align: top;
+    }
+    li{
+        text-align: center;
+        padding:18px 0 0px 0;
+        width:125px;
+        height:35px;
+        background-color:#af8eb3b9;
+    }
+    a {
+        text-decoration: none;
+        color:black;
+        padding:10px 20px 10px 20px;
+        
+    }
+    .menu li ul{
+        padding-left:0;
+        margin-top:17px;
+        background: linear-gradient(0deg, rgba(254,233,82,1) 18%, rgba(253,186,106,1) 41%, rgba(249,164,178,1) 63%, rgba(176,142,180,1) 85%);
+    } 
+    .menu li ul li {
+        background-color: transparent;
+    }
+    .menu ul li{
+        display:block;
+        margin-top:0px;
+        margin-bottom:0;
+    }
+    li:hover {
+        background-color:#af8eb3;
+    }
+
+    /* 1 */
+    .desplegable1{
+        display:none;
+    }
+    
+    .appears:hover .desplegable1 {
+        display:block;
+    }
+    
+    /* 2 */
+    .desplegable2{
+        opacity:0;
+    }
+    .opacity:hover .desplegable2 {
+        opacity:1;
+        transition:2s;
+    }
+    
+    /* 3 */
+    .desplegable3{
+        height:0px;
+        overflow:hidden;
+        display:flex;
+        flex-direction: column;
+    }
+    .both:hover .desplegable3{
+        height:160px;
+        transition:2s; 
+    }
+
+    /* 4 */
+    .desplegable4 {
+        height:0px;
+        overflow:hidden;
+        display:flex;
+        flex-direction: column;
+        opacity:0;
+    }
+    .all:hover .desplegable4{
+        height:110px;
+        transition:3s; 
+        opacity:1;
+    }
+
+    /* 5 */
+    .button:hover{
+        background:#FED45D;
+    }
+
+    
+</style>
+<body>
+    <h2>Menús amb hover</h2>
+    <nav>
+        <ul class="menu">
+            
+            <li class="appears"><a href="">Home</a>
+                <ul class="desplegable1">
+                    <li><a href="">What is this</a></li>
+                    <li><a href="">Why</a></li>
+                </ul>
+            </li>
+            
+            <li class="opacity"><a href="">Photos</a>
+                <ul class="desplegable2">
+                    <li><a href="">First Year</a></li>
+                    <li><a href="">Second Year</a></li>
+                    <li><a href="">Third Year</a></li>
+                </ul>
+            </li>
+            
+            <li class="both"><a href="">Us</a>
+                <ul class="desplegable3">
+                    <li id="team"><a href="">The Team</a></li>
+                    <li id="values"><a href="">Our Values</a></li>
+                    <li id="story"><a href="">Our Story</a></li>
+                </ul>
+            </li>
+            
+            <li class="all"><a href="">Contact</a>
+                <ul class="desplegable4">
+                    <li><a href="">Where</a></li>
+                    <li><a href="">Form</a></li>
+                </ul>
+            </li>
+
+            <li class="button"><a href="">mec</a></li>
+
+            
+        </ul>
+    </nav>
+    
+</body>
+</html>

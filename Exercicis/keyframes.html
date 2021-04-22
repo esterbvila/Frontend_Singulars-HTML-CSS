@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        @keyframes rainbow {
+            0%{
+                background-color: red;
+            }
+            15%{
+                background-color: orange;
+            }
+            30%{
+                background-color:yellow;
+            }
+            45%{
+                background-color:purple;
+            }
+            60%{
+                background-color:blue;
+            }
+            75%{
+                background-color:green;
+            }
+            90%{
+                background-color:turquoise;
+            }
+            100% {
+                background-color: red;;
+            }
+        }
+        @keyframes bounce{
+            0%{
+                bottom:680px;
+            }
+            5%{
+                bottom:450px;
+            }
+            15%{
+                bottom:300px;
+            }
+            30%{
+                
+              
+            }
+            45%{
+                
+            }
+            60%{
+             
+            }
+            75%{
+               
+            }
+            90%{
+                
+            }
+            100% {
+               
+            }
+            
+        }
+        
+        div.rainbow {
+            width:300px;
+            height:300px;
+            background-color:teal;
+        }
+        .rainbow{
+            animation: rainbow linear 5s infinite;
+            /* animation-fill-mode: forwards; */
+            /* animation-play-state: running; si està encesa o apagada */
+        }
+        /* Propietats del animation:
+        div {animation-timing-function:cubic-bezier (.30,1.93,.63,.75)} */
+
+        input {
+            display:none;
+        }
+        input [type="checkbox"]:checked + div {
+            animation:bounce linear 5s;
+            background-color:black;
+        }
+        .bounce{
+            position:relative;
+            left:200px;
+            bottom:600px;
+            display:inline-block;
+            transition:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow"></div>
+
+    <label for="animation"><div class="button"></div></label>
+    <input type="checkbox" name="" id="animació">
+    <div class="animation"></div>
+    <div class="bounce"></div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovers</title>
+    <style>
+        body {
+            width:1024px;
+            margin:auto;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h3 {
+            text-align: center;
+        }
+
+        /* NO EM MENGIS */
+        .tocar p {
+            background-color:darksalmon;
+            width:140px;
+            text-align: center;
+            margin:auto;
+        }
+        .tocar:hover .ocult { /* quan faci hover en un element,li estic canviant les propietats a un fill. */
+            display:block;
+        } 
+        /* el símbol + selecciona el seguent germà, és a dir, l'element que està a l amateixa alçada */
+        .ocult {
+            display:none;
+            text-align: center;
+            margin-left: 70px;
+        }
+
+        /* TEXT A SOBRE */
+        .zindex {
+            margin:auto;
+            width:600px;
+            height:600px;
+            border:1px solid black;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            transition:1s;
+        }
+        .tocar2:hover .oculttext {
+            display:block;
+            z-index: 1;
+            transition:1s;
+        }
+        .oculttext{
+            display:none;
+            position:absolute;
+            transition: 0.5s ease;
+        }
+        .oculttext {
+            width:170px;
+            height:50px;
+            text-align: center;
+            color: white;
+            background-color: rgb(18, 68, 85);
+            opacity:0.5;
+            padding: 125px 65px;
+        }
+        .tocar2 {
+            display:flex;
+        }
+
+
+        /* POSICIONS */
+        .confons{
+            margin:auto;
+            width:600px;
+            height:600px;
+            border:1px solid black;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .fons {
+            display:flex;
+            width:300px;
+            height:300px;
+        }
+        #sobre {
+            position: relative;
+            bottom: 450px;
+            left:350px;
+            display:flex;
+        }
+        .fons:hover {
+            z-index:1;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- NO EM MENGIS -->
+    <h3>HOVER</h3>
+    <div class="tocar">
+        <p>"No em mengis"</p>
+        <div class="ocult"><img src="img/sushi.png"></div>
+    </div>
+    
+    <!-- TEXT A SOBRE -->
+    <h3>Z-INDEX</h3>
+    <div class="zindex">
+        
+        <div class="tocar2 night">
+            <div class="oculttext one"><p>Aquesta imatge és random</p>
+            </div><img src='http://lorempixel.com/300/300/nightlife' alt=''/>
+        </div>
+        
+        <div class="tocar2 kitten">
+            <div class="oculttext two"><p>Aquesta imatge és random</p>
+            </div><img src='http://placekitten.com/300/300' alt=''/>
+        </div>
+        
+        <div class="tocar2 random">
+            <div class="oculttext three"><p>Aquesta imatge és random</p></div>
+            <img src='http://unsplash.it/300/300?random&gravity=center' alt=''/>
+        </div>
+        
+        <div class="tocar2 food">
+            <div class="oculttext three"><p>Aquesta imatge és random</p></div>
+            <img src='http://lorempixel.com/300/300/food' alt=''/>
+        </div> 
+        
+    </div>
+
+    <!-- OMAR -->
+    <h3>OMAR</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quas deleniti deserunt inventore dolore placeat dolorum neque ab quasi quo, quis eaque necessitatibus enim eveniet magni cum unde aspernatur dicta nobis cumque, molestias error, similique qui? Asperiores cum doloremque quidem sapiente aliquam, totam cumque iste officiis? uasi iusto officia? Omnis molestias ab rem asperiores laborum mollitia accusantium quidem, et natus magnam? Quo obcaecati architecto deserunt velit pariatur corporis quidem quis non fugiat similique, facere quia harum facilis, doloremque vero, sunt perferendis molestias ad consequuntur quaerat tenetur magni ipsa corrupti. At commodi animi dolores voluptas quod soluta sapiente obcaecati eaque eveniet fuga explicabo eligendi, adipisci, quasi recusandae enim voluptatem iure libero nobis laudantium autem dolorem optio doloribus in! Ipsa pariatur exercitationem excepturi voluptates! Saepe vero molestias aperiam quisquam ab voluptatum corporis eius blanditiis nobis. Cupiditate placeat fugit neque est voluptas temporibus debitis.</p>
+    <div class="pare">
+        <div class="pos"></div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, reiciendis autem! Pariatur odio adipisci molestiae, temporibus deleniti quasi maiores. Quaerat, dignissimos. Dignissimos officiis porro qui reprehenderit laborum. Eligendi aperiam reprehenderit necessitatibus enim illo expedita quidem eum dolorum repellendus itaque quaerat, placeat, ipsa illum error. Quasi maiores earum magnam, perspiciatis iste impedit qui voluptatem cumque architecto facilis ea tempora sapiente? Unde cumque rerum iusto nostrum blanditiis quia iste cum! Harum quisquam quas sunt eum aspernatur, hic recusaores facilis ipsum, tempore nisi neque cum nesciunt eaque qui ipsam deleniti et vero illo! Consequuntur excepturi accusamus id quos dicta repellendus mollitia, ipsum nulla reiciendis sequi dolorum quia hic harum vel libero obcaecati exercitationem rerum non, quaerat voluptatem incidunt soluta sunt ipsam inventore. Eum aliquid quisquam architecto impedit vero placeat blanditiis. Ab reprehenderit rem suscipit animi, et dolores. Perferendis quia praesentium adipisci dolore asperiores, enim excepturi recusandae ducimus distinctio fugiat consequuntur ad molestias obcaecati voluptatum? Culpa corrupti repudiandae officia aliquid accusamus provident tempora temporibus ut quae eos nisi nostrum quas aspernatur voluptates quasi aperiam voluptas ab, nam praesentium unde! Expedita autem hic porro asperiores dolore aspernatur corrupti. Non autem eos est totam fugiat, molestiae itaque recusandae doloremque, quasi quaerat beatae praesentium accusantium nemo libero rerum facilis. Adipisci aliquid eaque, sed aliquam earum perspiciatis beatae animi reiciendis quis blanditiis incidunt modi, voluptas consectetur nesciunt pariatur corporis deserunt labore quod quidem nisi libero nostrum, rerum quasi mollitia? Consequuntur ad quas totam id enim ipsum facilis officia minus aperiam excepturi doloremque sequi beatae, dolores dignissimos! Ullam delectus, officiis quia, maxime explicabo necessitatibus nihil iusto quidem expedita non perspiciatis debitis dolore vel tempore atque tenetur molestias voluptates harum architecto excepturi accusantium odio! Similique accusantium perspiciatis maxime placeat porro quo quos repudiandae perferendis, veniam earum eaque quae expedita velit quod, asperiores voluptatem facilis? Aliquid numquam omnis amet. Incidunt ducimus, excepturi earum provident, iusto voluptas maxime eum ea neque asperiores aperiam esse nesciunt nihil at deserunt? Vel assumenda dolore, voluptatem obcaecati aperiam aliquid eveniet. Magni nemo ea quis dolorem, porro maiores minus et quibusdam accusamus repellat, veniam dicta aspernatur labore facilis pariatur sapiente laborum ipsa officia. Consequuntur impedit ullam neque, obcaecati et sequi officiis nostrum rem fugiat modi, facilis nihil alias, suscipit iusto. Vitae doloremque accusantium, non nisi eius dolorum quia dignissimos ratione dicta aliquid veritatis beatae quisquam laboriosam doloribus suscipit inventore qui consectetur, quibusdam assumenda rem esse? Tenetur libero quae quo! Blanditiis iusto tempore repellat debitis eaque provident, voluptate et sint! Ab laboriosam tempora voluptatibus sunt delectus rem, esse officia, autem ad culpa quidem dolor ducimus ut ipsam vitae libero consequatur provident harum. Quibusdam in vero, exercitationem molestiae et nesciunt, dicta culpa quam fuga eum quasi sit at ducimus voluptates. Nesciunt temporibus repellendus itaque maiores cumque sed eius mollitia sit, quasi optio, a reprehenderit. Dicta eveniet molestias commodi repellat accusamus rem architecto atque. Quibusdam eaque commodi laboriosam officia officiis facere, dolor perspiciatis harum modi earum voluptatem voluptate unde non quia ea sapiente voluptates. Explicabo minima nulla dicta placeat nam ad inventore sed laudantium optio aperiam cumque perferendis magni dolor nesciunt veritatis corporis provident mollitia consequatur commodi omnis tenetur, expedita deserunt delectus nihil! Est, accusamus aliquid? Sequi ullam sit dolorem harum, cumque modi sint fugit illo autem non, quod corrupti! Maxime nostrum, voluptatum dolore totam rem facere quibusdam debitis saepe enim vel. Similique aspernatur doloremque, in nesciunt ad nisi, aperiam vero quaerat, dolor magni itaque facilis quam. Eos esse, natus corrupti doloribus dolorum impedit debitis quisquam inventore accusantium quo repudiandae. Atque incidunt numquam ex unde omnis tenetur fugiat harum quaerat, non nam ipsum sequi, corporis ratione earum tempore, magnam asperiores assumenda. Qui sint praesentium atque ipsa esse eaque eligendi, consequuntur tenetur eius sequi, maxime optio accusamus, cum quos ut est totam minima ratione doloribus fugiat commodi voluptatibus error provident. Illo iste, nesciunt officiis dolores temporibus itaque sapiente! Eos repellat at eaque nihil inventore tempora ducimus doloribus quam autem, veniam ipsa culpa nostrum cum cumque, laudantium distinctio exercitationem deleniti. Neque vero mollitia atque voluptatum nostrum animi ducimus possimus corporis quaerat quisquam, fugit quas nisi dolorum facilis repellendus, unde dicta voluptates cumque laborum delectus illo consectetur. Minima commodi aperiam asperiores velit distinctio odit at autem, magnam natus impedit. Eos totam rerum nesciunt facere ipsa libero repudiandae iste quasi. Ad est consequatur itaque dolorem asperiores quasi voluptas animi excepturi nihil. Ipsam facere, explicabo reprehenderit ea qui commodi? Quibusdam eaque dolor commodi natus. Quibusdam temporibus, eum dignissimos, quisquam ratione ab sint veniam quod sequi, assumenda minus. Facilis expedita deserunt, quis nobis voluptates, quo tempora cupiditate, quae labore sed iusto. Quibusdam possimus qui quaerat quas. Unde, velit. Tenetur quia reprehenderit officiis. Fugit animi in repellendus recusandae beatae voluptatibus sed, sit, delectus eaque magni molestiae eius. Qui unde sunt aut suscipit molestiae blanditiis, molestias consequuntur eos ullam fuga officia libero aperiam in quasi nam autem vero labore id sint nemo rem fugiat at. Facere rerum officiis commodi illo aut iusto id vitae, ut voluptate, molestiae doloribus sit, nesciunt eligendi obcaecati dolorem autem recusandae soluta a debitis tempore sequi porro odio maiores. Ullam dicta at quae labore consequuntur praesentium facere nam. Corrupti accusamus, consequatur quae illo reprehenderit in numquam. Provident ut labore autem incidunt nesciunt minus quidem dignissimos rerum, pariatur asperiores eveniet vitae, laudantium reiciendis impedit delectus perspiciatis laboriosam voluptas saepe tempore! Alias officia ullam illum nam nobis! Aliquam, vel.</p>
+</div>
+
+    <!-- POSICIONS -->
+    <h3>POSICIONS</h3>
+
+    <div class="confons">
+    
+    <div class="fons 1"><img src='http://lorempixel.com/300/300/city' alt=''/></div>
+    <div class="fons 2"><img src='http://lorempixel.com/300/300/nature' alt=''/></div>
+    <div class="fons 3"><img src='http://lorempixel.com/300/300/animals' alt=''/></div>
+    <div class="fons 4"><img src='http://lorempixel.com/300/300/people' alt=''/></div>
+
+    </div>
+
+    <img id="sobre" src='http://lorempixel.com/300/300/abstract' alt=''/>
+</body>
+</html>

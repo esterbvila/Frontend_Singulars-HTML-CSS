@@ -1,0 +1,69 @@
+body{
+    background-image: url(./img/bg.gif)
+}
+.cont {
+    width:900px;
+    height:775px;
+    background-color: whitesmoke;
+    margin:auto;
+    align-content: center;
+    border-radius: 20px 20px;
+}
+.nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    /* el vertical-align és per si es té en block */
+}
+#logo {
+    width:125px;
+    display:inline-block;
+}
+.nav ul{
+    width: 600px;
+    display:inline-block;
+    text-align: right;
+}
+.nav ul li {
+    list-style: none;
+    display:inline-block;
+}
+.nav ul li a {
+    text-decoration: none;
+    padding:15px;
+    color:black;
+}
+.nav ul li a:hover{
+    background-color:darkred;
+}
+#flaixbac {
+    width:900px;
+}
+h2 {
+    text-align: center;
+}
+.inferior {
+    width:880px;
+    display: inline-block;
+    margin-left:20px;
+    margin-bottom: 25px;
+}
+.inferior div{
+    width:244px;
+    display:inline-block;
+    margin-left: 20px;
+    margin-right:20px;
+}
+h3{
+    color:darkred;
+}
+.app {
+    width:244px;
+}
+.inferior div p{
+    text-align: justify;
+    font-size:0.9em;
+}
+.nav p{
+    padding-left:20px;
+}

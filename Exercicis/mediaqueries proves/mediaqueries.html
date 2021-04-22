@@ -1,0 +1,148 @@
+<!-- Els media queries son una manera de dir-li al nostre css quines regles ha d'aplicar i quines no -->
+<!-- Hi ha dues maneres d'utilitzar-les: Podriem fer un link css o amb @media -->
+<!-- l'atribut media em permet escullir la resolució de pantalla per la que vull aquest estil -->
+<!-- Serà important si dissenyem la pàgina mobile first o desktop first (quin és l'estil per defecte?) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" media="screen" href="styleM.css">  <!-- CSS Mobile -->
+    <link rel="stylesheet" media="screen and (min-width:800px)" href="styleD.css">  <!-- CSS Desktop -->
+    
+    <style>
+
+        /* Omar */
+
+        #media,#media2,#media3 {
+            width:200px;
+            height:200px;
+        }
+
+        #media2{
+            background-color:rgb(230, 105, 3); /* Desktop First */
+        }
+
+        #media3{
+            background-color: rgb(194, 202, 177);  /* Mobile First */
+        }
+
+        @media only screen and (max-width:800px){ /* es carrega amb pantalles més petites de 800px | Desktop First*/ 
+            #media2{
+                background-color: rgb(223, 188, 175);
+            }
+        }
+
+        @media only screen and (min-width: 800px){/* es carrega amb pantalles més grans de 800px | Mobile First */
+            #media3{
+                background-color: rgb(0, 134, 56);
+            }
+        }
+
+
+        /* Fet per mi */
+
+        #media4,#media5,#media6{
+            width:150px;
+            height:150px;
+        }
+
+        #media4{ /* Desktop First */  /* es carrega entre 800px i 1200px */
+            background-color: rgb(191, 191, 207);
+        }
+
+        #media5{  /* Desktop First */ /* es carrega entre 800px i 1200px */
+            background-color: rgb(249, 226, 253);
+        }
+
+        #media6{ /* Desktop First */ /* es carrega entre 800px i 1200px */
+            background-color: rgb(250, 248, 227);
+        }
+
+        @media only screen and (min-width:600px){ /* es carrega a partir de 600px | Desktop First*/
+            #media4{
+                background-color: rgb(165, 165, 209);
+            }
+            #media5{
+                background-color: rgb(225, 164, 231);
+
+            }
+            #media6{
+                background-color: rgb(248, 242, 177);
+
+            }
+        }
+
+        @media only screen and (min-width:800px){ /* es carrega a partir de 800px | Desktop First*/
+            #media4{
+                background-color: rgb(102, 102, 194);
+            }
+            #media5{
+                background-color: rgb(215, 117, 228);
+
+            }
+            #media6{
+                background-color: rgb(248, 238, 128);
+
+            }
+        }
+
+        @media only screen and (min-width:1000px){ /* es carrega a partir de 1000px | Desktop First*/
+            #media4{
+                background-color: rgb(68, 68, 202);
+            }
+            #media5{
+                background-color: rgb(207, 58, 226);
+
+            }
+            #media6{
+                background-color: rgb(243, 229, 71);
+
+            }
+        }
+
+        @media only screen and (min-width:1200px){ /* es carrega a partir de 1200px */
+            #media4 {
+                background-color: rgb(2, 2, 204);
+            }
+            #media5 {
+                background-color: rgb(255, 0, 242);
+            }
+            #media6 {
+                background-color: rgb(255, 230, 2);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Omar -->
+    <div id="media">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, maiores delectus corporis alias molestiae voluptates quisquam sed sit dolores nesciunt ex numquam assumenda sint eaque ea veniam natus aut odit?</p>
+    </div>
+
+    <div id="media2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, maiores delectus corporis alias molestiae voluptates quisquam sed sit dolores nesciunt ex numquam assumenda sint eaque ea veniam natus aut odit?</p>
+    </div>
+
+    <div id="media3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, maiores delectus corporis alias molestiae voluptates quisquam sed sit dolores nesciunt ex numquam assumenda sint eaque ea veniam natus aut odit?</p>
+    </div>
+
+    <!-- Ester -->
+    <div id="media4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, maiores delectus corporis alias molestiae</p>
+    </div>
+
+    <div id="media5">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, maiores delectus corporis alias molestiae </p>
+    </div>
+
+    <div id="media6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, maiores delectus corporis alias molestiae </p>
+    </div>
+
+
+</body>
+</html>

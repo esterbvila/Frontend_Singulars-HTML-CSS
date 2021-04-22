@@ -1,0 +1,88 @@
+<!-- Als formularis també se'ls hi poden fer seccions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(profe)Formularis</title>
+</head>
+<style>
+    body {
+        max-width:550px;
+    }
+    fieldset {
+        height:max-content;
+        width: 400px;
+        margin:20px 0;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        flex-direction: row;
+    }
+    
+    label,input,textarea,button,select {
+        width:max-content;
+        height:max-content;
+     
+    }
+
+    form input:not([type="checkbox"]) {
+        width:200px;
+    }
+    form input[type="submit"] {
+        margin:10px 40px;
+    }
+    input [type="checkbox"] {
+        display:none;
+    }
+/* 
+    perquè una checkbox sigui pulsable en la seva etiqueta: label for="pusable" i input id="pulsabe"
+
+    cursor: pointer ; */
+    
+</style>
+<body>
+    <div>
+        <h2>Formulari 1</h2>
+
+        <form>
+            <fieldset>
+                <legend>Part 1</legend>
+
+                <label for="entrega">Data d'entrega</label>
+                <input type="date" name="entrega"></input>
+                
+                <label for="exercici">Nom de l'exercici</label>
+                <input type="text" name="exercici" placeholder="Escriu el nom">
+
+                <label for="desc">Descripció de l'exercici</label>
+                <textarea type="desc" name="exercici" placeholder="Descriu l'exercici aquí"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Part 2</legend>
+
+                <label for="completat">Exercici Completat</label>
+                <input type="checkbox" name="completat">
+
+                <label for="color">Color preferit </label>
+                <input type="color" name="color">
+
+                <label for="nota">Nota</label>
+                <select name="nota" id="">
+                    <option value="0">Suficient</option>
+                    <option value="1">Bé</option>
+                    <option value="2" selected>Notable</option>
+                    <option value="3">Excelent</option>
+                </select>
+            </fieldset>
+
+            <button> Enviar</button>
+
+            <input type="submit" value="Enviar">
+            <!-- El botó tipic de formularis és l'input -->
+
+        </form>
+    </div>
+</body>
+</html>

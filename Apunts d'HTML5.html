@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!-- Si escrius ! + TAB el dodcument es genera sol -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunts d'HTML</title>
+    <link rel="shortcuticon" href="proves.css" type="image/x-icon">  <!-- favicon generator -->
+    
+<!-- Feedback
+Genial, Ester! M'agrada molt que el títol estigui així de costat i es mantingui tota l'estona. Potser estaria guai que fessis el mateix amb un índex amb enllaços, per poder saltar entre seccions més fàcilment. -->
+<!-- Position:fixed i top, left al menú 
+He après a fer tal qual i tal
+control +f per buscar paraules clau-->
+    <style> 
+        body {
+            margin:auto;
+            width:1024px;
+            text-align:justify;
+        }
+        div.text{
+            margin: 1em 2em 1em 2em;
+        }
+        h1.titol{
+            background-color:lightblue;
+            padding-right: 50px;
+            padding-left: 1em;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            letter-spacing: 7px;;
+            font-family: 'Courier New', Courier, monospace;
+            transform:rotate(-90deg)translate(-126px, -238px);
+            position:fixed;
+        }
+        h3,h4{
+            font-family: 'Courier New', Courier, monospace;
+            color:black;
+            margin-top:2em;
+        }
+        div.code {
+            background-color: rgb(196, 221, 230);
+            max-width: fit-content; /*amb "with" a seques, l'amplada no varia encara que modifiquis coses del web*/ 
+            padding: 1em 40px 1em 0; /* els marges interiors es diuen Paddings. Padding top, Padding Right, Padding Bottom & Padding Left. Els números sempre estan ordenats en aquesta seqüència: top, right, bottom, left. */
+            margin-top: 1em;
+            margin-bottom: 1em;
+        } 
+        div.footer {
+            text-align:right;
+            font-variant:small-caps;
+        }
+        a {
+            text-decoration: none;
+            color:steelblue;
+        }
+        ul,li{
+            list-style: none;
+        }
+    </style>
+    </head>
+    <body>
+        <h1 class="titol">APUNTS D'HTML</h1>
+
+        <div class="text">
+            <h3>Què és L'Html?</h3>
+            <p>L'html no és un llenguatge de programació, sinó un llenguatge de marcat d'hipertext (Hyper Text Markup Language) per a l'elaboració de pàgines web. És un estàndar que serveix de referència del software que conecta amb l'elaboració de pàgines web en les seves diverses versions, defineix una estructura bàsica i un codi (denomitat codi HTML) per la definició de contingut d'una pàgina web, com text, imatges, videos, jocs, entre d'altres.</p>
+            <p>És un estàndard a càrreg del World Wide Web Consortium (W3C), una organització dedicada a l'estandarització de casi totes les tecnologies lligades al web, sobretot pel que fa a la seva escriptura i interpretació.</p>
+            <p>L'HTML es considera el llenguatje web més important siguent la seva inventció crucial en l'aparició, desenvolupament i expansió de la World Wide Web (WWW). És l'estàndard que s'ha imposat en la visualització de pàgines web i és el que tots els navegadors actuals han adoptat.  </p>
+            <p> Els de W3C tenen un validador de codi: et diu si les pàgines cumpleixen amb els seus estàndards i el perquè. Serveix per a "depurar" el codi. És important per tema de posicionament web: si tens la teva pàgina i vols que el teu web aparegui el més a dalt possible quan es faci una cerca relacionada, com més cumpleixi amb els estàndars de codi, més a dalt apareixerà.</p>
+            
+            <h3>Estructura d'un document HTML5 </h3>
+            <p>L'Estructura bàsica d'un document HTML5 és la seguent:</p>
+            
+            <div class="code">
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang=&quot;en&quot;&gt;
+                    &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                    &lt;style&gt; /* aquí va l'estil CSS */ &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;</pre>
+                </div> 
+                <p>Els comentaris en html són &lt;!-- així --&gt;. Els comentaris de CSS són /* així */.</p>
+            
+            <h3>Recurssos</h3>
+                <p><a href="https://www.freeformatter.com/html-escape.html" target="_blank"> Escapar text</a></p>
+                <p><a href="https://www.w3schools.com/" target="_blank">W3C Schools</a> </p>
+                <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> </p>
+                <p><a href="https://www.dafont.com/es/" target="_blank">Dafont</a> </p>
+                <p><a href="https://cssgradient.io/" target="_blank">Css Gradient.io</a> </p>
+                <p><a href="https://webcode.tools/generators/css/border-image" target="_blank">CSS3 Border Image Generator - WebcodeTools</a> </p>
+                <p><a href="https://validator.w3.org/" target="_blank">Validator w3</a> </p>
+                <p><a href="https://cssgridgarden.com/#ca" target="_blank">CSS Grid Garden</a> </p>
+                <p><a href="https://glassmorphism.com/" target="_blank">Glassmorphism CSS Generator</a> </p>
+                <p><a href="https://www.favicon-generator.org/" target="_blank">Favicon.ico generator</a> </p>
+                <p><a href="https://animate.style/" target="_blank">Animate CSS</a> </p>
+                <p><a href="https://www.emojicursor.app/" target="_blank">Emoji Cursor</a> </p>
+                <p><a href="https://milligram.io/#getting-started" target="_blank">CSS Milligram Framework</a> </p>
+                <p> Aconseguir Paleta de Colors amb Paint. Amb el Paint escriure un text, qualsevol, agafes el seleccionador, el fas molt petit, el desselecciones, el tornes a seleccionar i el fas gran. Curiosament et crea una paleta.</p>
+            
+            <div id="bloque">
+               
+                <h3> Exercicis</h3>
+                <p><a href="Exercicis/Animacions amb hover.html">Animacions amb hover
+                </p>
+                <p><a href="Exercicis/Cinema scroll.html">Cinema amb un scroll
+                </p>
+                <p><a href="Exercicis/Columnes inline-block.html">Columnes amb display:inline-block
+                </p>
+                <p><a href="Exercicis/Columnes flex.html">Columnes amb display:flex
+                </p>
+                <p><a href="Exercicis/Display flex caixes.html">Caixes ordenades amb display:flex
+                </p>
+                <p><a href="Exercicis/Display grid.html">Display:grid
+                </p>
+                <p><a href="Exercicis/Displays finestres.html">Realització de tres finestres amb flex, inline-block/block i float
+                </p>
+                <p><a href="Exercicis/Formulari.html">Prova formulari
+                </p>
+                <p><a href="Exercicis/hover zindex position.html">Proves amb hover, z-index i position
+                </p>
+                <p><a href="Exercicis/keyframes.html">Proves amb @keyframes
+                </p>
+                <p><a href="Exercicis/Maquetació Noticies.htm">Maquetació de Notícies amb divs, borders, @font-face i span class
+                </p>
+                <p><a href="Exercicis/Maquetació Vertical amb Imatges.html">Maquetació vertical partint d'un model
+                </p>
+                <p><a href="Exercicis/mediaqueries proves/">Proves amb media queries
+                </p>
+                <p><a href="Exercicis/Menú desplegable.html">Menú desplegable amb hovers
+                </p>
+                <p><a href="Exercicis/Panteó amb Scrolls i Flex.html">Panteó i columnes de text amb scrolls i dipslay:flex
+                </p>
+                <p><a href="Exercicis/Proves d'Estils.html">Proves d'Estils
+                </p>
+                <p><a href="Exercicis/Proves.html">Proves
+                </p>
+                <p><a href="Exercicis/speed/">Concurs de rapidesa entre companys
+                </p>
+                <p><a href="Exercicis/transicions.html">Proves de transicions amb hover
+                </p>
+                <p><a href="Exercicis/Web Simple.html">Creació de l'estructura d'un web simple
+                </p>
+
+                <h3>Maquetacions</h3>
+                <p><a href="Maquetacions/Disseny lliure psicodèlic/index.html">Web "Psicolocybin", d'esil psicodèlic utilitzant display:grid i personalitzant el cursor
+                </p>
+                <p><a href="Maquetacions/Maquetació Sushi/SushiTime(1).html">Web de sushi amb 3 estils CSS diferents 
+                </p>
+                <p><a href="Maquetacions/Planting/Índex.html">Web "Planting", de temàtica natural, barra de navegació fixa
+                </p>
+                <p><a href="Maquetacions/Universe/Index.html">Web "Stellar", de temàtica espacial i amb efecte parallax
+                </p>
+                <p><a href="Maquetacions/Web Vuit/Índex.html">Web "Vuit"
+                </p>
+                <p><a href="Maquetacions/web-responsive-desktop-first/winter.html">Web responsive desktop-first, de temàtica hivernal
+                </p>
+                <p><a href="Maquetacions/web-responsive-mobile-first/">Web responsive mobile-first, de temàtica estival
+                </p>
+
+                <h3>Maquetacions amb Bootstrap:</h3>
+                <p><a href="Bootrstrap/Port de Premià/Index.html">Web pel Port de Premià amb Bootrstap
+                </p>
+                <p><a href="Bootrstrap/Gadopta'm/">Web de prova utilitzant Bootrstrap
+                </p>
+
+                <div class="footer">
+                    <p> Ester Batllori I Vila</p>
+                </div>
+                    </div>
+                </body>
+                </html>

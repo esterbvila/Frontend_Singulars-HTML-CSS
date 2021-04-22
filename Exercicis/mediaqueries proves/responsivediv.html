@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Div</title>
+
+    <style>
+        /* Això és un pre-set */
+        .fixed,.max,.min,.res{
+            height:200px;
+            background-color:rgb(252, 223, 228);
+            margin:5px auto;
+        }
+
+        .fixed{
+            width:800px;
+        }
+        .max{
+            max-width:800px;
+        }
+        .min{
+            min-width:800px;
+        }
+
+        /* hi ha unes mides predeterminades "Typical Device Breakpoints": */
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width:600px) {
+            .res{
+                max-width:600px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .res{
+                width:600px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .res{
+                width:768px;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .res{
+                width:992px;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .res{
+                width:1200px;
+            }
+        }
+
+        /* EXERCICI 2 */
+
+        #ex2{
+            display:flex;
+            border:1px solid brown;
+            flex-direction:row;
+        }
+        .block{
+            margin:5px 5px;
+            background-color: rgb(255, 228, 228);
+        }
+
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 600px) {
+            #ex2{
+                width:600px;
+                flex-direction: column;
+            }
+            .block{
+                width:585px;
+               
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 600px) {
+            #ex2{
+                width:768px;
+                height:650px;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .block{
+                width:300px;
+                height:300px;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            #ex2{
+                width:1240px;
+                flex-direction:row;
+            }
+            .block{
+                width:300px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    
+</body>
+
+<!-- Exercici 1 -->
+<div class="fixed">
+    <p>fixed dimensions</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis similique, dolore ut harum corporis voluptatum veniam atque vitae eveniet!</p>  
+</div>
+
+<div class="max">
+    <p>max</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis similique, dolore ut harum corporis voluptatum veniam atque vitae eveniet!</p>
+</div>
+
+<div class="min">
+    <p>min</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis similique, dolore ut harum corporis voluptatum veniam atque vitae eveniet!</p>
+</div>
+
+<div class="res">
+    <p>responsive</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis similique, dolore ut harum corporis voluptatum veniam atque vitae eveniet!</p>
+</div>
+
+
+<!-- Exercici 2 -->
+
+<div id="ex2">
+    <div class="block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam animi tenetur explicabo autem dolores accusamus aliquam quo consequatur? Doloremque, qui.</div>
+    <div class="block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus esse, quam temporibus deleniti quibusdam earum mollitia illo aliquam ipsa!</div>
+    <div class="block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iure temporibus libero sapiente! Iure quo quos porro minima eveniet totam. </div>
+    <div class="block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, iure? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sunt earum facere libero! Tempore, nemo aut sunt distinctio ea velit. </div>
+</div>
+
+<!-- que tinguin l'amplada' fixa i estiguin alineats un al costat altre
+
+quan es faci més petita la pàgina, 2 a dalt, i 2 a baix
+
+quan encara es faci més petita, que passin a estar alineats en una columna i en comptes de quadrats siguin rectangles que vagin de punta a punta -->
+
+
+
+</html>

@@ -1,0 +1,65 @@
+@font-face { /* font importada d'un arxiu */
+    font-family:sushisushi;
+    src: url(./res/Sushi\ Sushi.ttf);}
+body {
+    width:1024px;
+    margin:auto;
+    background-color: black;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+h1 {
+    transform:rotate(-90deg)translate(-382px, -493px);
+    font-size: 3em;
+    letter-spacing:0.2em;
+    margin-top:-50px;
+    padding-right:50px;
+    position:fixed;
+} 
+h2 {
+    margin-top: 50px;
+}
+ul li{
+    list-style: none;
+    display:inline-block;
+    margin:5px;
+    padding:5px;
+    border: 1px solid rgb(150, 150, 150);
+}
+ul{
+    text-align: left; 
+    margin-top:20px;
+    margin-bottom:40px;
+    padding: 0;
+}
+li a {
+    text-decoration:none;
+    color:rgb(252, 123, 84);
+    font-weight:bold;
+}
+.block1{
+    height:290px;
+    padding:0;
+    margin-bottom:75px;
+}
+span.highlight {
+    font-size:1.2em;
+    font-weight:bold;
+    color:rgb(252, 123, 84);
+}
+p{
+    text-align: justify;
+}
+#imagethree {
+    width:400px;
+}
+#suchicaract {
+    font-family:"sushisushi";
+    color:rgb(253, 203, 183);
+}
+#imageone {
+    width:400px;
+}
+#imagetwo {
+    width: 300px;
+}

@@ -1,0 +1,362 @@
+@font-face {
+    font-family: Rubik-Light;
+    src:url(./res/Rubik/static/Rubik-Light.ttf);
+}
+@font-face {
+    font-family: Rubik-Regular;
+    src:url(./res/Rubik/static/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik-Medium;
+    src:url(./res/Rubik/static/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: bungee;
+    src:url(./res/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family:"Rubik-Light";
+    font-size:1em;
+    color: rgb(53, 63, 63);
+    background: radial-gradient(circle, rgba(255,233,82,1) 28%, rgba(251,156,109,1) 44%, rgba(253,116,234,1) 56%, rgba(122,74,235,1) 75%, rgba(40,86,38,1) 95%);
+    background-attachment: fixed;
+    overflow:auto;
+    align-content: center;
+}
+.margin {
+    margin:0;
+    margin-right:13%;
+    margin-left:auto;
+    width:1190px;
+}
+/*----------------HEADER------------------ */
+div.header {
+    width:82.7%;
+    margin:0 0% 0 4.4%;
+    overflow:auto;
+}
+header {
+    width:525px;
+    padding:10px;
+    align-content: center;
+    margin:auto;
+    display: flex;  
+    font-family:"bungee";
+}
+header img {
+    width:50px;
+    height:50px;
+    margin: auto 0;
+}
+header h1 {
+    margin:20px 10px;
+    color:rgba(255,233,82,1);
+    font-size:3.2em;
+    font-family:"bungee";
+    letter-spacing:0.1em;
+}
+/*----------------NAV------------------ */
+nav{
+    display:inline-block;
+    width:150px;
+    align-items: top;
+    vertical-align: top;
+    position: sticky;
+    top:0px;
+    padding:0;
+}
+nav ul{
+    text-align:right;
+    list-style: none;
+    background-color:rgba(251,156,109,1);
+    margin:0;
+    padding:2px;
+}
+nav ul li {
+    text-align:center;
+}
+nav ul li a{
+    display:block;
+    width:80px;
+    text-decoration: none;
+    padding:10px 20px;
+    background-color:rgba(122,74,235);
+    font-size:0.9em;
+    color:rgba(255,233,82);
+    margin:10px;
+    border: rgba(40,86,38,1) solid  2px;
+    letter-spacing:0.2em;
+    font-family:"Rubik-Regular";
+}
+/*-------------CONTENT---------------- */
+div.content {
+    display:inline-block;
+    width:620px;
+    background: radial-gradient(circle, rgba(255,233,82,1) 28%, rgba(255,233,82,1) 95%);
+    vertical-align: top;
+    overflow:auto;
+    border: rgba(255,233,82,1) solid 20px;
+    padding: 10px;
+    font-size:0.9em;
+}
+.content h1,.content h2,.content h3{
+    color:rgba(40,86,38,1);
+    letter-spacing:0.15em;
+    font-family: "Rubik-Regular";
+}
+div.content h1.title {
+    margin-top: 0px;
+    margin-bottom:5px;
+}
+div.content p.subtitle {
+    text-align:justify;
+}
+.colstop {
+    margin:0;
+    display:flex;
+}
+.colleft {
+    width:70%;
+    margin:0;
+    padding-right:20px;
+}
+.colleft h2 {
+    margin-top:10px;
+    margin-bottom:5px;
+}
+.colstop .colleft p.text {
+    text-align: justify;
+}
+.colstop .colleft img {
+    float:right;
+    width:200px;
+    margin-left:10px;
+}
+.learnmore {
+    margin-top:25px;
+}
+.learnmore a {
+    text-decoration:none;
+    width:60px;
+    padding:8px;
+    color:#285525;
+    font-family: "Rubik-Regular"; 
+    border:2px #285525 solid;
+    background:linear-gradient(173deg, rgba(255,233,82,1) 28%, rgba(251,166,105,1) 95%);
+}
+
+.colright {
+    width:30%;
+    margin:auto 0;
+}
+.colright .links1,.colright .links2 {
+    background: linear-gradient(173deg, rgba(255,233,82,1) 28%, rgba(251,166,105,1) 95%);
+    padding:5px 10px;
+    text-align: center;
+    margin-bottom:30px;
+}
+.colright .links1 h2,.colright .links2 h2 {
+    font-size:1.1em;
+}
+.colright ul {
+    padding-left:0px;
+}
+.colright ul li {
+    list-style:none;
+    margin:5px 0px;
+}
+.colright ul li a{
+    text-decoration:none;
+    color:rgba(122,74,235);
+    font-family: "Rubik-Regular";
+    font-size: 0.9em;
+}
+
+.content .titol2 {
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+.content .subtitle2 {
+    margin: 21px auto;
+    text-align:justify;
+}
+
+/*---------------GRID----------------- */
+div.gridinline {
+    display:inline-block;
+    width:320px;
+    height: 525px;
+    vertical-align: top;
+    position: sticky;
+    top:0px;
+    background-color:#FD7CD1;
+    border: #FD7CD1 solid 20px;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌈</text></svg>") 16 0,auto; 
+}
+.margin .gridinline h3 {
+    margin:0 auto 5px auto;
+    font-family:"Rubik-Regular";
+    letter-spacing:0.3em;
+    text-align:center;
+    color:rgb(122,74,235);
+}
+.grid p {
+    font-size: xx-small;
+    margin:2px;
+}
+.grid {
+    width:320px;
+    height: 500px;
+    margin:0;
+    padding:0;
+    display:grid;
+    column-gap:5px;
+    row-gap:5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas:"div1 div2 div2"
+                        "div1 div3 div4"
+                        "div5 div3 div4"
+                        "div5 div3 div7"
+                        "div6 div6 div6";
+}
+.div1 {
+    grid-area: div1;
+    background-image: url(./img/art1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.div2 {
+    grid-area: div2;
+    background-image: url(./img/art2.jpg);
+    background-size: cover;
+    width:100%;
+    /* background-position: 10px 40px; */
+}
+.div3 {
+    grid-area:div3;
+    background-image: url(./img/art3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.div4 {
+    grid-area:div4;
+    background-image: url(./img/art4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    
+}
+.div5 {
+    grid-area:div5;
+    background-image: url(./img/art5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.div6 {
+    grid-area:div6;
+    background-image: url(./img/art6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+
+}
+.div7 {
+    grid-area:div7;
+    background-image: url(./img/art7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+
+/*--------------CONTENT2------------- */
+div.content2 {
+    width:100%;
+    background-color:#285525 ;
+    position:absolute;
+}
+.content2 h1,.content2 h2,.content2 h3{
+    color:rgba(255,233,82,1);
+    letter-spacing:0.15em;
+    font-family: "Rubik-Regular";
+}
+.colsbot {
+    width:900px;
+    margin:auto;
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+}
+.smalltext {
+    width:  350px;
+    padding: 5px 20px 25px 20px;
+}
+.smalltext iframe {
+    width:350px;
+    height:250px;
+}
+.rrss {
+    width:250px;
+    padding: 5px 20px 25px 20px;
+    display:flex;
+    flex-direction:column;
+}
+
+.fab {
+    color:rgba(255,233,82,1);
+    font-size: 2em; 
+    margin:15.5px 40px;
+} 
+
+.form {
+    width:350px;
+    padding-top:5px;
+}
+form{
+    margin-top:20px;
+}
+label{
+    margin:20px 20px 0 20px;
+}
+input,textarea{
+    margin-top:30px;
+    max-width:150px;
+}
+label,input.form,textarea{
+    color:rgba(255,233,82,1);
+}
+#text{
+    height:40px;
+    margin-bottom:20px;
+    margin-right:26px;
+    margin-top:-20px;
+}
+#send{
+    color:#285525;
+    margin:20px 40px 0 40px;
+}
+
+/*---------------FOOTER-------------- */
+.footer {
+    width:100%;
+    position:relative;
+    top:335px;
+    background: transparent;
+    font-size:0.9em;
+}
+footer{
+    width:900px;
+    margin:auto;
+    text-align:center;
+    padding:10px;
+
+
+}

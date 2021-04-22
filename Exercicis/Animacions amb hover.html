@@ -1,0 +1,66 @@
+<!-- img {
+    transition:1s;
+} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacions</title>
+    <style>
+        body {
+            display:flex;
+        }
+        .notrans{
+            margin:auto;
+            width:300px;
+            top:0;
+            transition:4s;          
+            position:relative;
+        }
+        .notrans:hover{
+            top:50px;
+        }
+        .trans{
+            margin:auto;
+            width:300px;
+            top:0px;         
+            position:relative;
+        }
+        .trans:hover{
+            top:50px;
+            transition:4s; 
+        }
+        .click:hover + .notrans{
+            top:50px;
+        }
+        .click {
+            width:80px;
+            margin:auto;
+        }
+        .click p {
+            text-align:center;
+            color:black;
+            font-weight: bold;
+            background-color: red;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="click">
+        <p>toca'm</p>
+    </div>
+    <div class="notrans">
+        <img src='http://lorempixel.com/300/300/cats' alt=''/>
+    </div>
+
+    <div class="trans">
+        <img src='http://lorempixel.com/300/300/cats' alt=''/>
+    </div>
+
+    
+
+</body>
+</html>

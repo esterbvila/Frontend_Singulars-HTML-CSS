@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+body{
+    background-image: url("img/heic1509a-scaled.jpg") ;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:190%;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+div.menu {
+    position:fixed;
+    width:100%;
+    background:rgb(12, 12, 12, 0.9);
+    margin-top:-300px;
+    padding:0;
+    vertical-align: top;
+} 
+div.menu ul{
+    width:680px;
+    display:flex;
+    padding:0;
+    text-align:center;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+div.menu ul li {
+    list-style:none;
+    display:inline-block;
+    text-align: center;
+}
+div.menu ul li a {
+    text-decoration:none;
+    color:whitesmoke;
+    padding:16px 50px;
+    font-size:larger;
+    font-family: 'Goldman', cursive;
+    text-align: center;
+}
+.menu ul li:not(:last-child){
+    border-right:solid 2px rgb(255, 253, 253);
+}
+.cont {
+    width:100%;
+    height:1140px;
+    background:rgb(0, 0, 0);
+    margin:0;
+    margin-top:300px;
+}
+.what {
+    color:whitesmoke;
+    width:800px;
+    margin:auto;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid whitesmoke;
+}
+.what h1 {
+    font-size:3em;
+}
+h1,h2,h3,h4 {
+    font-family: 'Goldman', cursive;
+    color:white;
+    text-align: center;
+}
+.what p {
+    font-size: larger;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+.trips{
+    width:800px;
+    margin:auto;
+    margin-top:40px;
+}
+.modalities {
+    width:800px;
+    display:flex;
+    flex-direction: row;
+    margin:0;
+    padding:0;
+}
+.modality {
+    width:33.33%;
+    margin:0;
+    margin-left:10px;
+    margin-right:10px;
+    padding:0;
+    text-align:center;
+}
+.trips h2{
+    margin-bottom:8px;
+    margin-top:25px;
+}
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+}
+.modality a{
+    text-decoration: none;
+    color:white;
+    padding:10px 15px;
+    font-size:small;
+    background-color:rgba(209, 209, 209, 0.1);
+    font-family:'Roboto', sans-serif;
+}
+.modality a:hover {
+    background-color:rgba(209, 209, 209, 0.9);
+}
+.experience {
+    width:100%;
+    margin-top:40px;
+}
+img {
+    width:380px;
+    height:210px;
+}
+.pics {
+    display:flex;
+    width:800px;
+    flex-direction: row;
+    margin:auto;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.pic p{
+    width:380px;
+    text-align: center;
+    font-size: small;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+.pic {
+    margin-left:10px;
+    margin-right:10px;
+}
+.transparent {
+    margin-top:150px;
+    width:100%;
+    background-color: none;
+    margin-bottom:100px;
+}
+.transparent h3 {
+    font-family: 'Roboto', sans-serif;
+    width:800px;
+    margin:auto;
+    font-weight:900;
+}
+.information {
+    width:100%;
+    background-color: black;
+    padding-top:5px;
+}
+.information2 {
+    width:800px;
+    margin:auto;
+}
+.information .information2 p{
+    text-align: center;
+    font-size: small;
+}
+.information .information2 h3{
+    margin-top:5px;
+}
+.pic h3 {
+    margin-top: 5px;
+    margin-bottom:5px;
+}

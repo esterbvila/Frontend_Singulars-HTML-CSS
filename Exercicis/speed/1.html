@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            width:500px;
+            height:50px;
+            background-color: rgba(230, 218, 168, 0.598);
+            float:left;
+        }
+        .image:hover{
+            background-image: url("http://placekitten.com/g/300");
+            background-color: none;
+            background-size: cover;
+        }
+        .sticky {
+            width:500px;
+            height:50px;
+            position:sticky;
+            background-color: rgba(210, 180, 140, 0.598);
+            top:0;
+            float:right;
+        }
+        h1{
+            text-shadow:  0 0 5px #248d42, 0 0 8px #19753b;
+            margin:auto;
+            text-align: center; 
+        }
+
+        h1:hover{
+            text-shadow: -100px 0px 5px #19753b;
+        }
+        .rojo{
+            width:1024px;
+            height:100px;
+            background-color: red;
+            margin:100px auto;
+            border-radius: 20px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            box-shadow: 0 0 5px #248d42, 0 0 8px #19753b;
+        }
+        .rojo:hover {
+            background-color:salmon;
+        }
+        .col{
+            width:300px;
+        }
+        table{
+            border-spacing: 10px;
+        }
+        table td img{
+            width:100px;
+            height:10px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="image"></div>
+    <div class="sticky"></div>
+
+    <h1> Hellou</h1>
+    <div class="rojo">
+        <div class="col one">
+            <ul>
+                <li><a href="">enlace 1</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique autem quae nam reiciendis eos animi voluptate dolorem id provident optio sit vitae distinctio, necessitatibus veritatis, eaque quo quidem nostrum exercitationem. Optio molestias illum in atque obcaecati recusandae voluptatibus ratione magni error blanditiis est placeat ipsum consequuntur tenetur, facilis nesciunt?</li>
+                <li><a href="">enlace 2</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempora cupiditate molestias neque iusto fuga sint voluptatem ut possimus vero ullam, debitis ipsam est blanditiis illum sequi. Quidem, officiis commodi ea facere temporibus, ut nam, aperiam blanditiis asperiores incidunt aut. In libero delectus nam sapiente asperiores labore natus tenetur repellat.</li>
+                <li><a href="">enlace 3</a> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat illo harum est id! Eveniet possimus quos fuga laudantium consequatur debitis dolore tempore dignissimos atque sequi officiis odio nisi, qui quas. In rerum amet atque perferendis nam numquam sapiente nihil animi. Ab exercitationem unde aspernatur earum adipisci architecto corporis officiis itaque?</li>
+                <li><a href="">enlace 4</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusantium officiis magnam fugit excepturi unde aut asperiores neque in, nam explicabo maxime vitae enim inventore amet itaque ea perspiciatis rerum alias architecto culpa illo quasi quia? Temporibus incidunt fugiat aut alias error nostrum maxime fuga nihil, perspiciatis animi rem minima.</li>
+            </ul>
+        </div>
+
+        <div class="col two">
+
+            <a href="https://www.google.es/?hl=ca"><img src='http://placekitten.com/g/300/100' alt=''/></a></div>
+
+        <div class="col three">
+            <table>
+                <tr>
+                  <td><img src='http://placekitten.com/g/50/50' alt=''></th>
+                  <td><img src='http://placekitten.com/g/50/50' alt=''/></th>
+                </tr>
+                <tr>
+                  <td><img src='http://placekitten.com/g/50/50' alt=''/></td>
+                  <td><img src='http://placekitten.com/g/50/50' alt=''/></td>
+                </tr>
+                <tr>
+                  <td><img src='http://placekitten.com/g/50/50' alt=''/></td>
+                  <td><img src='http://placekitten.com/g/50/50' alt=''/></td>
+                </tr>
+              </table>
+              
+
+        </div>
+    </div>
+    
+</body>
+</html>

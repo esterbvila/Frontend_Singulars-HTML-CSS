@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family:'Open Sans', sans-serif;
+    margin:0;
+}
+p{
+    color: #373834;
+}
+ul {
+    padding:0;
+}
+li {
+    list-style:none;
+}
+div.nav {
+    position:fixed;
+    width:100%;
+    background: linear-gradient(0deg, rgba(162,175,44,0.8029586834733894) 0%, rgba(216,219,164,0.7861519607843137) 100%);
+    z-index:1;
+} 
+div.nav ul{
+    display:flex;
+    justify-content: space-around;
+    margin-left:0;
+    padding-left: 0;
+}
+div.nav ul li {
+    list-style:none;
+    display:inline-block;
+    background-color: transparent;
+
+}
+div.nav ul li a {
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color:#f7f4ee;
+    padding:16px 40px;
+    background-color: transparent;
+}
+.header {
+    padding-top:10px;
+    padding-bottom:20px;
+    background-color:#f7f4ee;
+}
+.títol{
+    position:relative;
+    width:700px;
+    height:200px;
+    align-content: center;
+    justify-content: center;
+    margin:auto;
+    padding:0;
+}
+h1{
+    font-size: 7em;
+    color:#81953E;
+    margin-bottom:0px;
+    font-weight: bold;
+    text-align:center;
+}
+h5 {
+    position: absolute;
+    top: 110px;
+    right: 207px;
+    color:#576429;
+}
+.imatge {
+    height: 300px;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-image: url("img/high-angle-of-potted-plants-and-shovel.jpg");
+    background-repeat:no-repeat;
+    background-position:100% 10%;
+}
+.contingut {
+    width:100%;
+    background-color:#f7f4ee;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.contingut2 {
+    width:800px;
+    margin:auto;
+    display:flex;
+}
+.text {
+    width:76%;
+    margin-right:25px;
+    text-align: justify;
+}
+.enllaços {
+    width:24%;
+    margin-left:25px;
+}
+.enllaços ul {
+    padding:0;
+}
+.enllaços ul li {
+    list-style: none;
+    margin-bottom:10px;
+}
+.enllaços ul li a{
+    text-decoration: none;
+    color:#c8ca52;
+}
+.text h3 {
+    text-align: right;
+    color:#2a3114;
+}
+.enllaços h3 {
+    color:#2a3114;
+}
+.prefooter {
+    background: rgb(71, 77, 20);
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.prefooter2{
+    width:800px;
+    margin:auto;
+    display:flex;
+}
+.links1,.links2{
+    width:35%;
+    text-align: center;
+}
+.media{
+    width:30%;
+    text-align: center;
+}
+.links1,ul li a{
+    text-decoration: none;
+    color:#f7f4ee;
+}
+.links2,ul li a{
+    text-decoration: none;
+    color:#f7f4ee;
+}
+.media {
+    padding-top:60px;
+    padding-bottom:50px;
+}
+.media h3 {
+    color:#f7f4ee;s
+}
+i.fab {
+    color:#f7f4ee;
+    font-size: 2em; 
+    margin-left:9px;
+    margin-right:9px;
+} 
+.footer{
+    width:100%;
+    background-color:rgba(216,219,164,0.7861519607843137);
+    margin:0;
+    padding:5px;
+}
+.footer2{
+    width:800px;
+    margin:auto;
+    text-align: justify;
+    text-align: center;
+    font-size:0.53em;
+}
+.footer2 p{
+    color:#5c5e56;
+}
+/* <!-- Footer amb color solid i text de copywrite. Buscar com posar la c de copywerite.  --> */
