@@ -4,5 +4,5 @@ HTML &amp; CSS exercises and projects done during the Frontend Bootcamp by Singu
 
 Check out my final project with danifdezalonso using React: https://github.com/danifdezalonso/hourglass-app
 
-Open "Apunts.html" in order to see the list (with links) to all files.
+Open "Apunts d'HTML5.html" in order to see the list (with links) to all files.
 
